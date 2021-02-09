@@ -19,7 +19,7 @@ pipeline {
                         failOnError: true,
                         continueOnError: false, 
                         publishers: [
-                             sshPublisheDesc(
+                             sshPublisherDesc(
                                   configName: 'staging',
                                   sshCredentials: [
                                         username: "$USERNAME",
@@ -52,7 +52,7 @@ pipeline {
                         failOnError: true,
                         continueOnError: false, 
                         publishers: [
-                             sshPublisheDesc(
+                             sshPublisherDesc(
                                   configName: 'staging',
                                   sshCredentials: [
                                         username: "$USERNAME",
